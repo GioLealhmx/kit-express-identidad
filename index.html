@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kit Express de Identidad Visual para Negocios Locales</title>
+  <meta name="description" content="Guía práctica, prompts, paletas y checklist para mejorar rápido la imagen visual de un negocio local. Pago seguro por Stripe.">
+  <meta property="og:title" content="Kit Express de Identidad Visual para Negocios Locales">
+  <meta property="og:description" content="Crea una identidad visual simple para WhatsApp, redes y negocio local sin perder días pensando.">
+  <meta property="og:image" content="assets/galeria-1-oferta.png">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fff9f0;
+      --ink: #1f2937;
+      --muted: #5b6472;
+      --brand: #ef7c45;
+      --brand-dark: #c95727;
+      --card: #ffffff;
+      --line: #f2d7c7;
+      --green: #0f766e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(239, 124, 69, 0.22), transparent 30rem),
+        radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.13), transparent 28rem),
+        var(--bg);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 32px 0 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      font-size: 1.15rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.74);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 40px;
+      align-items: center;
+      padding: 54px 0 44px;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 5vw, 5.15rem);
+      letter-spacing: -0.07em;
+      line-height: 0.92;
+      margin: 18px 0 22px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      max-width: 660px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+      align-items: center;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 16px;
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+      box-shadow: 0 16px 34px rgba(201, 87, 39, 0.28);
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      background: var(--brand-dark);
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .price-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 24px 70px rgba(124, 67, 35, 0.13);
+    }
+
+    .price {
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -0.05em;
+      margin: 8px 0;
+    }
+
+    .price small {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .preview {
+      width: 100%;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      display: block;
+      margin-top: 22px;
+    }
+
+    section {
+      padding: 44px 0;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      letter-spacing: -0.05em;
+      line-height: 1;
+      margin: 0 0 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+    }
+
+    .card p, li {
+      color: var(--muted);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: white;
+      box-shadow: 0 18px 44px rgba(124, 67, 35, 0.12);
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .steps li {
+      counter-increment: step;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 36px 0 50px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 820px) {
+      header, .hero { grid-template-columns: 1fr; }
+      header { align-items: flex-start; flex-direction: column; }
+      .grid, .gallery { grid-template-columns: 1fr; }
+      .price-card { order: -1; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">GreenDigi</div>
+    <div class="pill">Entrega digital · Pago seguro por Stripe</div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <span class="pill">Para negocios locales, WhatsApp y redes</span>
+        <h1>Kit express para que tu negocio se vea más confiable.</h1>
+        <p class="lead">Una guía práctica con brief, método de 25 minutos, prompts, paletas y checklist para definir una identidad visual simple sin perder días pensando.</p>
+        <div class="cta-row">
+          <a class="button" href="https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E">Comprar por MXN $100</a>
+          <span class="note">Ideal para barberías, comida, belleza, ropa, cursos y servicios.</span>
+        </div>
+      </div>
+
+      <aside class="price-card" aria-label="Resumen de compra">
+        <div class="pill">Precio de lanzamiento</div>
+        <div class="price">MXN $100 <small>Pago único. Recibes el material digital.</small></div>
+        <p class="note">Después de pagar, Stripe solicita tu correo para confirmar la compra. Si quieres apoyo extra, responde con el brief incluido.</p>
+        <img class="preview" src="assets/galeria-1-oferta.png" alt="Vista previa del kit de identidad visual express">
+      </aside>
+    </section>
+
+    <section class="wrap">
+      <h2>Qué incluye</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Guía PDF práctica</h3>
+          <p>Un recorrido simple para aterrizar estilo, colores y uso visual sin términos complicados.</p>
+        </article>
+        <article class="card">
+          <h3>Prompts y paletas</h3>
+          <p>Ideas listas para generar conceptos de logo y elegir colores según el tipo de negocio.</p>
+        </article>
+        <article class="card">
+          <h3>Brief de 7 preguntas</h3>
+          <p>Un formulario corto para ordenar el nombre, giro, estilo, referencias y entregables.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>Muestras del kit</h2>
+      <div class="gallery">
+        <img src="assets/galeria-1-oferta.png" alt="Oferta del kit express">
+        <img src="assets/galeria-2-muestras.png" alt="Muestras de identidad visual">
+        <img src="assets/galeria-3-entregables.png" alt="Entregables incluidos">
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>Cómo funciona</h2>
+      <ol class="steps">
+        <li>Compra el kit con pago seguro por Stripe.</li>
+        <li>Revisa la guía y completa el brief de 7 preguntas.</li>
+        <li>Define tu dirección visual y aplica la checklist en WhatsApp, redes o etiquetas.</li>
+      </ol>
+      <div class="cta-row">
+        <a class="button" href="https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E">Comprar ahora</a>
+        <span class="note">No incluye registro de marca ni garantía de ventas.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    Producto digital de GreenDigi. El pago se procesa en Stripe. El material no usa marcas ni plantillas de terceros.
+  </footer>
+</body>
+</html>
