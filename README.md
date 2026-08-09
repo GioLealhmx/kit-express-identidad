@@ -16,6 +16,13 @@ Landing pública para vender productos digitales de bajo ticket creados para neg
 - Diagnóstico express de WhatsApp Ventas por Stripe: https://buy.stripe.com/bJe28r6nG7nc0nCft53AY0F
 - Checkout oficial Hotmart: https://go.hotmart.com/P107066691Y
 
+## Recursos gratuitos y servicios
+
+- Checklist gratis de WhatsApp para vender mejor: https://giolealhmx.github.io/kit-express-identidad/checklist-whatsapp-gratis.html
+- Guía de anuncios locales en 60 minutos: https://giolealhmx.github.io/kit-express-identidad/guia-anuncios-locales.html
+- Generador de copy: demo gratis en https://giolealhmx.github.io/kit-express-identidad/demo-copy.html
+- Revisión express por Contra: https://contra.com/s/eQFZqBPr-revision-express-de-copy-y-whats-app-para-negocios?r=jovany_salvador_rios_le_n6zth183
+
 ## Productos
 
 ### Diagnóstico gratis
