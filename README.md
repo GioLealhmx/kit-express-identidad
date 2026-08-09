@@ -1,9 +1,36 @@
-# Kit Express de Identidad Visual
+# Kits digitales GreenDigi para negocios locales
 
-Landing pública para vender el “Kit Express de Identidad Visual para Negocios Locales”.
+Landing pública para vender productos digitales de bajo ticket creados para negocios locales que venden por WhatsApp, redes o mostrador.
 
-- Checkout: https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E
-- Servicio Ko-fi: https://ko-fi.com/gioleal/commissions
-- Precio: MXN $100
-- Servicio adicional: revisión express por USD $5+
-- No incluye el ZIP/PDF de entrega para no publicar gratis el producto pagado.
+## Compra rápida
+
+- Landing pública: https://giolealhmx.github.io/kit-express-identidad/
+- Kit visual por Payhip: https://payhip.com/b/W3M07
+- Kit visual por Ko-fi: https://ko-fi.com/s/976b2544fc
+- Kit WhatsApp Ventas + IA por Ko-fi: https://ko-fi.com/s/82d9b64554
+- Revisión express personalizada por Ko-fi: https://ko-fi.com/gioleal/commissions
+- Pago directo en MXN por Stripe: https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E
+
+## Productos
+
+### Kit Express de Identidad Visual para Negocios Locales
+
+Guía digital para ordenar estilo, colores, prompts y checklist visual sin contratar una agencia ni pasar días decidiendo. Pensado para barberías, comida, belleza, ropa, cursos, servicios y pequeños negocios.
+
+Precio: USD $5.
+
+### Kit Express WhatsApp Ventas + IA
+
+Kit digital con scripts de respuesta, prompts de IA, checklist y mini CRM CSV para dar seguimiento a conversaciones de venta por WhatsApp.
+
+Precio: USD $5.
+
+### Revisión express
+
+Servicio personalizado desde USD $5+: el comprador envía nombre/giro/logo o referencia y recibe 3 mejoras concretas, paleta sugerida y prompts aplicables.
+
+## Control de entrega
+
+Este repositorio solo publica la landing y las imágenes promocionales. No incluye el ZIP/PDF de entrega para no publicar gratis el producto pagado.
+
+Los pagos y entregas se procesan por Payhip, Ko-fi o Stripe. No hay promesa de resultados comerciales, registro de marca ni asesoría legal.
