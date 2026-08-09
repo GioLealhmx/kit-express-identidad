@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatar de marca para perfil profesional | GreenDigi</title>
+  <meta name="description" content="Avatar de marca cuadrado, listo para usar en tu perfil profesional o negocio. Entrega en PNG en 24 horas hábiles.">
+  <style>
+    :root { --ink:#1f2937; --muted:#5b6472; --brand:#6d5dfc; --dark:#18213a; --line:#e7e4ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#f8f8ff; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
+    .wrap { width:min(960px,calc(100% - 32px)); margin:0 auto; }
+    header { padding:28px 0; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:900; letter-spacing:-.04em; }
+    .pill { display:inline-flex; padding:7px 12px; border-radius:999px; background:#eeedff; color:#5146c8; font-weight:800; font-size:.9rem; }
+    .hero { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center; padding:44px 0 34px; }
+    h1 { font-size:clamp(2.3rem,6vw,4.8rem); line-height:.94; letter-spacing:-.07em; margin:16px 0 20px; }
+    h2 { font-size:clamp(1.8rem,4vw,2.8rem); letter-spacing:-.05em; line-height:1; }
+    .lead,p,li { color:var(--muted); }
+    .card { background:white; border:1px solid var(--line); border-radius:24px; padding:24px; box-shadow:0 18px 55px rgba(70,61,150,.1); }
+    .preview { width:100%; max-width:420px; display:block; margin:0 auto; border-radius:24px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 20px; border-radius:15px; background:var(--brand); color:white; text-decoration:none; font-weight:900; box-shadow:0 14px 28px rgba(109,93,252,.25); }
+    .button:hover { background:#5547df; }
+    .button.secondary { background:var(--dark); }
+    .cta-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    section { padding:34px 0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    footer { padding:34px 0 52px; color:var(--muted); font-size:.92rem; }
+    @media(max-width:760px){ .hero,.grid{grid-template-columns:1fr;} .hero aside{order:-1;} }
+  </style>
+</head>
+<body>
+  <header class="wrap"><div class="brand">GreenDigi</div><span class="pill">Servicio express · pago seguro</span></header>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <span class="pill">Avatar de marca en PNG</span>
+        <h1>Una imagen clara para que tu perfil se vea profesional.</h1>
+        <p class="lead">Creo un avatar de marca cuadrado para tu perfil profesional, proyecto o negocio. Recibes una propuesta visual lista para usar y una revisión breve para ajustar el resultado.</p>
+        <div class="card"><strong>Incluye</strong><ul><li>Avatar cuadrado en PNG</li><li>Propuesta visual alineada a tu actividad</li><li>Una revisión breve</li><li>Entrega en 24 horas hábiles</li></ul><p>Precio sugerido MXN $150 (puedes elegir entre MXN $100 y $500 en Stripe). No incluye promesas de ventas ni registro de marca.</p></div>
+        <div class="cta-row"><a class="button" href="https://buy.stripe.com/cNi14n3buazoees3Kn3AY0H">Encargar avatar por Stripe</a><a class="button secondary" href="index.html">Ver todos los kits</a></div>
+      </div>
+      <aside class="card"><img class="preview" src="assets/crecimiento-digital-avatar.png" alt="Ejemplo de avatar de marca Crecimiento Digital"><p>Ejemplo de estilo: limpio, reconocible y adaptable a perfiles profesionales.</p></aside>
+    </section>
+    <section class="wrap"><h2>Cómo funciona</h2><div class="grid"><article class="card"><strong>1. Compra</strong><p>Elige el importe en el enlace seguro de Stripe.</p></article><article class="card"><strong>2. Envíame tu contexto</strong><p>Indica nombre, actividad, colores y referencias después del pago.</p></article><article class="card"><strong>3. Recibe tu PNG</strong><p>Te entrego el avatar y aplico una revisión breve.</p></article></div></section>
+  </main>
+  <footer class="wrap">Producto/servicio de GreenDigi. Pago procesado por Stripe. Entrega digital en 24 horas hábiles; sin garantía de ventas.</footer>
+</body>
+</html>
