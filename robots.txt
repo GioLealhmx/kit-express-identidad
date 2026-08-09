@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giolealhmx.github.io/kit-express-identidad/sitemap.xml
