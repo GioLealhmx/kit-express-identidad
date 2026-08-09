@@ -257,7 +257,7 @@
 
   <script>
     const inputs = [...document.querySelectorAll("input[type='checkbox']")];
-    const result = document.querySelector("#result");
+    const result = document.querySelector("#result");\n    const nextStep = document.querySelector("#nextStep");\n    const ctaByPriority = {\n      "identidad visual": document.querySelector("#visualCta"),\n      "mensajes de WhatsApp": document.querySelector("#whatsappCta"),\n      "seguimiento": document.querySelector("#reviewCta")\n    };
 
     function update() {
       const checked = inputs.filter((input) => input.checked);
