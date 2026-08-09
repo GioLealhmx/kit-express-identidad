@@ -6,6 +6,7 @@ Landing pública para vender productos digitales de bajo ticket creados para neg
 
 - Landing pública: https://giolealhmx.github.io/kit-express-identidad/
 - Diagnóstico gratis: https://giolealhmx.github.io/kit-express-identidad/diagnostico-gratis.html
+- Página del kit WhatsApp Ventas + IA: https://giolealhmx.github.io/kit-express-identidad/whatsapp-ventas.html
 - Kit visual por Payhip: https://payhip.com/b/W3M07
 - Kit visual por Ko-fi: https://ko-fi.com/s/976b2544fc
 - Kit WhatsApp Ventas + IA por Ko-fi: https://ko-fi.com/s/82d9b64554
