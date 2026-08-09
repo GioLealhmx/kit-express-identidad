@@ -3,11 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kit Express de Identidad Visual para Negocios Locales</title>
-  <meta name="description" content="Kits prácticos de USD $5 para mejorar la imagen visual o las ventas por WhatsApp de un negocio local. Descarga automática por Payhip o Ko-fi.">
-  <meta property="og:title" content="Kit Express de Identidad Visual para Negocios Locales">
-  <meta property="og:description" content="Crea una identidad visual simple para WhatsApp, redes y negocio local sin perder días pensando.">
+  <title>Kits digitales de USD $5 para negocios locales | GreenDigi</title>
+  <meta name="description" content="Compra un kit digital de USD $5 para mejorar la identidad visual o los mensajes de WhatsApp de tu negocio local. Descarga automática por Payhip o Ko-fi.">
+  <meta property="og:title" content="Kits digitales de USD $5 para negocios locales">
+  <meta property="og:description" content="Elige un kit rápido: identidad visual, WhatsApp ventas + IA o revisión express personalizada desde USD $5.">
   <meta property="og:image" content="assets/galeria-1-oferta.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Kits digitales GreenDigi para negocios locales",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "position": 1,
+          "name": "Kit Express de Identidad Visual para Negocios Locales",
+          "brand": {"@type": "Brand", "name": "GreenDigi"},
+          "description": "Guía digital con brief, prompts, paletas y checklist para definir una identidad visual simple.",
+          "offers": {
+            "@type": "Offer",
+            "price": "5.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://payhip.com/b/W3M07"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 2,
+          "name": "Kit Express WhatsApp Ventas + IA",
+          "brand": {"@type": "Brand", "name": "GreenDigi"},
+          "description": "Kit digital con scripts, prompts de IA, checklist y mini CRM CSV para ordenar conversaciones de venta por WhatsApp.",
+          "offers": {
+            "@type": "Offer",
+            "price": "5.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ko-fi.com/s/82d9b64554"
+          }
+        }
+      ]
+    }
+  </script>
   <style>
     :root {
       color-scheme: light;
@@ -131,6 +168,20 @@
       font-size: 0.96rem;
     }
 
+    .quick-buy {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 18px;
+      border: 1px solid rgba(15, 118, 110, 0.24);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.78);
+    }
+
+    .quick-buy strong {
+      color: var(--green);
+    }
+
     .price-card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -181,11 +232,22 @@
       gap: 18px;
     }
 
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
     .card {
       background: rgba(255,255,255,0.82);
       border: 1px solid var(--line);
       border-radius: 22px;
       padding: 22px;
+    }
+
+    .card.highlight {
+      border-color: rgba(239, 124, 69, 0.45);
+      box-shadow: 0 18px 42px rgba(124, 67, 35, 0.1);
     }
 
     .card h3 {
@@ -195,6 +257,35 @@
 
     .card p, li {
       color: var(--muted);
+    }
+
+    .mini {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #fff2ea;
+      color: var(--brand-dark);
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .trust-row div {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.7);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.92rem;
     }
 
     .service-card {
@@ -274,7 +365,7 @@
     @media (max-width: 820px) {
       header, .hero { grid-template-columns: 1fr; }
       header { align-items: flex-start; flex-direction: column; }
-      .grid, .gallery { grid-template-columns: 1fr; }
+      .grid, .gallery, .choice-grid, .trust-row { grid-template-columns: 1fr; }
       .service-card { grid-template-columns: 1fr; }
       .price-card { order: -1; }
     }
@@ -290,14 +381,17 @@
     <section class="wrap hero">
       <div>
         <span class="pill">Para negocios locales, WhatsApp y redes</span>
-        <h1>Kit express para que tu negocio se vea más confiable.</h1>
-        <p class="lead">Una guía práctica con brief, método de 25 minutos, prompts, paletas y checklist para definir una identidad visual simple sin perder días pensando. También hay un kit rápido para ordenar respuestas y seguimiento por WhatsApp.</p>
+        <h1>Mejora cómo vendes y cómo se ve tu negocio por USD $5.</h1>
+        <p class="lead">Elige una descarga rápida: identidad visual para verte más confiable, WhatsApp Ventas + IA para responder mejor, o una revisión express personalizada por Ko-fi si quieres que alguien te diga exactamente qué mejorar.</p>
+        <div class="quick-buy">
+          <strong>Si quieres comprar sin pensarlo mucho:</strong>
+          <span>Payhip es la opción principal para descarga automática del kit visual. Ko-fi es mejor si prefieres pagar en USD o pedir una revisión personalizada.</span>
+        </div>
         <div class="cta-row">
-          <a class="button" href="https://payhip.com/b/W3M07">Comprar descarga USD $5</a>
-          <a class="button secondary" href="https://ko-fi.com/s/976b2544fc">Comprar también por Ko-fi USD $5</a>
+          <a class="button" href="https://payhip.com/b/W3M07">Comprar kit visual USD $5</a>
+          <a class="button secondary" href="https://ko-fi.com/gioleal/commissions">Pedir revisión USD $5+</a>
           <a class="button" href="https://ko-fi.com/s/82d9b64554">Kit WhatsApp + IA USD $5</a>
-          <a class="button secondary" href="https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E">Comprar por MXN $100</a>
-          <span class="note">Dos opciones de descarga: Payhip o Ko-fi. Ideal para barberías, comida, belleza, ropa, cursos y servicios.</span>
+          <span class="note">Ideal para barberías, comida, belleza, ropa, cursos, servicios y negocios que venden por mensaje.</span>
         </div>
       </div>
 
@@ -307,6 +401,43 @@
         <p class="note">También puedes pagar en MXN por Stripe directo, comprar el kit WhatsApp por Ko-fi o pedir una revisión express.</p>
         <img class="preview" src="assets/galeria-1-oferta.png" alt="Vista previa del kit de identidad visual express">
       </aside>
+    </section>
+
+    <section class="wrap" aria-label="Elegir producto">
+      <h2>Elige lo que necesitas ahora</h2>
+      <div class="choice-grid">
+        <article class="card highlight">
+          <span class="mini">Descarga automática</span>
+          <h3>Quiero que mi negocio se vea más confiable</h3>
+          <p>Compra el kit visual: brief, paletas, prompts y checklist para ordenar tu identidad en minutos.</p>
+          <div class="cta-row">
+            <a class="button" href="https://payhip.com/b/W3M07">Comprar en Payhip USD $5</a>
+            <a class="button secondary" href="https://ko-fi.com/s/976b2544fc">Prefiero Ko-fi USD $5</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="mini">Mensajes de venta</span>
+          <h3>Quiero responder mejor por WhatsApp</h3>
+          <p>Compra scripts, prompts de IA, checklist y mini CRM para dar seguimiento sin perder conversaciones.</p>
+          <div class="cta-row">
+            <a class="button" href="https://ko-fi.com/s/82d9b64554">Comprar en Ko-fi USD $5</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="mini">Servicio personalizado</span>
+          <h3>Quiero que revisen mi logo o estilo</h3>
+          <p>Envía tu negocio/referencia y recibe 3 mejoras concretas, paleta sugerida y prompts aplicables.</p>
+          <div class="cta-row">
+            <a class="button secondary" href="https://ko-fi.com/gioleal/commissions">Solicitar revisión USD $5+</a>
+          </div>
+        </article>
+      </div>
+      <div class="trust-row" aria-label="Señales de confianza">
+        <div>Pago procesado por Payhip, Stripe o Ko-fi.</div>
+        <div>Producto digital original de GreenDigi.</div>
+        <div>Descarga o solicitud desde la plataforma de compra.</div>
+        <div>Sin promesas falsas: guía práctica, no garantía de ventas.</div>
+      </div>
     </section>
 
     <section class="wrap">
@@ -374,7 +505,7 @@
       </ol>
       <div class="cta-row">
         <a class="button" href="https://payhip.com/b/W3M07">Comprar descarga USD $5</a>
-        <a class="button secondary" href="https://ko-fi.com/s/976b2544fc">Comprar por Ko-fi USD $5</a>
+        <a class="button secondary" href="https://ko-fi.com/s/976b2544fc">Comprar kit visual por Ko-fi USD $5</a>
         <a class="button" href="https://ko-fi.com/s/82d9b64554">Comprar kit WhatsApp USD $5</a>
         <a class="button secondary" href="https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E">Comprar por Stripe MXN $100</a>
         <a class="button secondary" href="https://ko-fi.com/gioleal/commissions">Quiero revisión por USD $5</a>
