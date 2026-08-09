@@ -182,6 +182,24 @@
       color: var(--green);
     }
 
+    .diagnostic-strip {
+      display: grid;
+      grid-template-columns: 1.4fr auto;
+      gap: 16px;
+      align-items: center;
+      margin-top: 12px;
+      padding: 18px;
+      border: 1px solid rgba(15, 118, 110, 0.26);
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.86), rgba(209,250,229,0.62));
+      box-shadow: 0 18px 55px rgba(15, 118, 110, 0.12);
+    }
+
+    .diagnostic-strip p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
     .price-card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -366,6 +384,7 @@
       header, .hero { grid-template-columns: 1fr; }
       header { align-items: flex-start; flex-direction: column; }
       .grid, .gallery, .choice-grid, .trust-row { grid-template-columns: 1fr; }
+      .diagnostic-strip { grid-template-columns: 1fr; }
       .service-card { grid-template-columns: 1fr; }
       .price-card { order: -1; }
     }
@@ -401,6 +420,17 @@
         <p class="note">También puedes pagar en MXN por Stripe directo, comprar el kit WhatsApp por Ko-fi o pedir una revisión express.</p>
         <img class="preview" src="assets/galeria-1-oferta.png" alt="Vista previa del kit de identidad visual express">
       </aside>
+    </section>
+
+    <section class="wrap" aria-label="Diagnóstico gratis">
+      <div class="diagnostic-strip">
+        <div>
+          <span class="mini">Gratis · 2 minutos</span>
+          <h2>¿No sabes si necesitas imagen, WhatsApp o seguimiento?</h2>
+          <p>Haz el diagnóstico rápido y recibe una prioridad clara antes de comprar. No pide datos personales y termina con el enlace exacto al kit o servicio que más te conviene.</p>
+        </div>
+        <a class="button" href="diagnostico-gratis.html">Hacer diagnóstico gratis</a>
+      </div>
     </section>
 
     <section class="wrap" aria-label="Elegir producto">
