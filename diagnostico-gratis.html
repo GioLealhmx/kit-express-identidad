@@ -164,6 +164,11 @@
       box-shadow: 0 16px 34px rgba(15, 118, 110, 0.22);
     }
 
+    .button.recommended {
+      outline: 4px solid rgba(239, 124, 69, 0.28);
+      outline-offset: 3px;
+    }
+
     .tips {
       display: grid;
       gap: 12px;
@@ -243,11 +248,12 @@
         <li>Si te falta seguimiento: usa una tabla simple con nombre, interés, fecha, siguiente mensaje y estado.</li>
       </ul>
       <div class="cta-row">
-        <a class="button" href="https://payhip.com/b/W3M07">Comprar kit visual USD $5</a>
-        <a class="button" href="https://ko-fi.com/s/82d9b64554">Comprar kit WhatsApp USD $5</a>
-        <a class="button secondary" href="https://ko-fi.com/gioleal/commissions">Pedir revisión USD $5+</a>
-        <a class="button secondary" href="https://buy.stripe.com/bJe28r6nG7nc0nCft53AY0F">Diagnóstico express MXN $150</a>
+        <a class="button" id="visualCta" href="https://payhip.com/b/W3M07">Comprar kit visual USD $5</a>
+        <a class="button" id="whatsappCta" href="https://ko-fi.com/s/82d9b64554">Comprar kit WhatsApp USD $5</a>
+        <a class="button secondary" id="reviewCta" href="https://ko-fi.com/gioleal/commissions">Pedir revisión USD $5+</a>
+        <a class="button secondary" id="diagnosticCta" href="https://buy.stripe.com/bJe28r6nG7nc0nCft53AY0F">Diagnóstico express MXN $150</a>
       </div>
+      <p class="muted" id="nextStep">Completa la checklist: al terminar, se resaltará la ruta más directa para tu prioridad.</p>
     </section>
   </main>
 
@@ -257,7 +263,13 @@
 
   <script>
     const inputs = [...document.querySelectorAll("input[type='checkbox']")];
-    const result = document.querySelector("#result");\n    const nextStep = document.querySelector("#nextStep");\n    const ctaByPriority = {\n      "identidad visual": document.querySelector("#visualCta"),\n      "mensajes de WhatsApp": document.querySelector("#whatsappCta"),\n      "seguimiento": document.querySelector("#reviewCta")\n    };
+    const result = document.querySelector("#result");
+    const nextStep = document.querySelector("#nextStep");
+    const ctaByPriority = {
+      "identidad visual": document.querySelector("#visualCta"),
+      "mensajes de WhatsApp": document.querySelector("#whatsappCta"),
+      "seguimiento": document.querySelector("#reviewCta")
+    };
 
     function update() {
       const checked = inputs.filter((input) => input.checked);
@@ -282,6 +294,14 @@
       }
 
       const level = score >= 7 ? "Fuerte" : score >= 5 ? "Aceptable, pero mejorable" : "Necesita orden rápido";
+      Object.values(ctaByPriority).forEach((cta) => cta.classList.remove("recommended"));
+      const recommendedCta = ctaByPriority[priority];
+      if (recommendedCta) recommendedCta.classList.add("recommended");
+      nextStep.textContent = priority === "identidad visual"
+        ? "Tu ruta más directa es el kit visual: pago único y descarga automática por Payhip."
+        : priority === "mensajes de WhatsApp"
+          ? "Tu ruta más directa es el kit WhatsApp: scripts, prompts y seguimiento para usar hoy."
+          : "Tu ruta más directa es pedir la revisión puntual: recibes mejoras editables para tu flujo.";
 
       result.innerHTML = `
         <strong>${score}/8 puntos · ${level}</strong>
