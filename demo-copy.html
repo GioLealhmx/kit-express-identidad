@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prueba gratis el generador de copy | GreenDigi</title>
+  <meta name="description" content="Genera gratis tres borradores para anuncios y WhatsApp sin subir datos. Si te sirve, compra el generador local o reserva su instalación.">
+  <meta property="og:title" content="Prueba gratis el generador de copy">
+  <meta property="og:description" content="Crea borradores editables para tu negocio directamente en el navegador, sin subir datos.">
+  <style>
+    :root { --ink:#1f2937; --muted:#5b6472; --brand:#ef7c45; --brand-dark:#c95727; --green:#0f766e; --bg:#fff9f0; --line:#f2d7c7; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at top left,rgba(239,124,69,.22),transparent 30rem),var(--bg); font:1rem/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .wrap { width:min(980px,calc(100% - 32px)); margin:0 auto; }
+    header { padding:28px 0; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:900; letter-spacing:-.04em; }
+    .pill { display:inline-flex; padding:7px 12px; border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--muted); font-weight:800; font-size:.9rem; }
+    main { padding:38px 0 64px; }
+    h1 { max-width:760px; margin:18px 0; font-size:clamp(2.25rem,7vw,4.8rem); letter-spacing:-.07em; line-height:.94; }
+    h2 { margin:0 0 12px; font-size:clamp(1.6rem,4vw,2.5rem); letter-spacing:-.05em; line-height:1; }
+    .lead { max-width:760px; color:var(--muted); font-size:1.16rem; }
+    .card { padding:24px; border:1px solid var(--line); border-radius:24px; background:rgba(255,255,255,.86); box-shadow:0 20px 55px rgba(124,67,35,.1); }
+    form { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:28px; }
+    label { display:grid; gap:7px; color:var(--muted); font-weight:800; }
+    label.full { grid-column:1 / -1; }
+    input, select { width:100%; min-height:48px; border:1px solid #e5cbbb; border-radius:13px; padding:10px 12px; color:var(--ink); background:#fff; font:inherit; }
+    .actions { grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    button, .button { display:inline-flex; justify-content:center; align-items:center; min-height:50px; padding:0 20px; border:0; border-radius:15px; background:var(--brand); color:#fff; text-decoration:none; font:inherit; font-weight:900; cursor:pointer; box-shadow:0 14px 30px rgba(201,87,39,.25); }
+    button:hover, .button:hover { background:var(--brand-dark); }
+    .button.secondary { background:var(--green); box-shadow:0 14px 30px rgba(15,118,110,.2); }
+    .note { color:var(--muted); font-size:.93rem; }
+    #results { display:grid; gap:14px; margin-top:24px; }
+    .result { padding:18px; border:1px solid var(--line); border-radius:18px; background:#fff; }
+    .result-head { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+    .result h3 { margin:0; }
+    .copy { white-space:pre-wrap; margin:12px 0 0; color:var(--ink); }
+    .copy-button { min-height:38px; padding:0 12px; background:#e7f4f1; color:#075e57; box-shadow:none; font-size:.88rem; }
+    .copy-button:hover { background:#cce9e3; }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    footer { padding:0 0 48px; color:var(--muted); font-size:.92rem; }
+    @media (max-width:720px) { header { display:block; } header .pill { margin-top:12px; } form { grid-template-columns:1fr; } label.full { grid-column:auto; } .actions { grid-column:auto; } .result-head { align-items:flex-start; flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">GreenDigi</div>
+    <a class="pill" href="index.html">Ver kits y servicios</a>
+  </header>
+  <main class="wrap">
+    <span class="pill">Gratis · funciona en tu navegador · sin subir datos</span>
+    <h1>Prueba una idea de copy antes de comprar.</h1>
+    <p class="lead">Escribe los datos básicos de tu oferta y recibe tres borradores editables: un anuncio corto, una respuesta inicial para WhatsApp y un seguimiento de 24 horas. Revisa cada texto antes de publicarlo.</p>
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title">Cuéntame lo esencial</h2>
+      <form id="copy-form">
+        <label>Negocio o proyecto
+          <input id="business" name="business" maxlength="70" placeholder="Ej. Barbería Central" required>
+        </label>
+        <label>Oferta principal
+          <input id="offer" name="offer" maxlength="90" placeholder="Ej. corte + barba desde $180" required>
+        </label>
+        <label>Público
+          <input id="audience" name="audience" maxlength="80" placeholder="Ej. personas que trabajan cerca" required>
+        </label>
+        <label>Canal
+          <select id="channel" name="channel">
+            <option>WhatsApp</option>
+            <option>Instagram</option>
+            <option>Facebook</option>
+            <option>Google Business</option>
+          </select>
+        </label>
+        <label class="full">Acción que quieres provocar
+          <input id="action" name="action" maxlength="70" placeholder="Ej. reservar hoy" required>
+        </label>
+        <div class="actions">
+          <button type="submit">Generar mis borradores</button>
+          <span class="note">Todo se procesa localmente en esta página.</span>
+        </div>
+      </form>
+      <div id="results" aria-live="polite"></div>
+      <div class="cta">
+        <a class="button secondary" href="https://ko-fi.com/s/e183f23d90">Comprar generador local USD $5</a>
+        <a class="button" href="instalacion-generador-copy.html">Reservar instalación</a>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Demo original de GreenDigi. No garantiza ventas; adapta y revisa cada texto antes de usarlo.</footer>
+  <script>
+    const form = document.getElementById('copy-form');
+    const results = document.getElementById('results');
+    const value = id => document.getElementById(id).value.trim();
+
+    function addResult(title, text) {
+      const article = document.createElement('article');
+      article.className = 'result';
+      const head = document.createElement('div');
+      head.className = 'result-head';
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+      const copyButton = document.createElement('button');
+      copyButton.type = 'button';
+      copyButton.className = 'copy-button';
+      copyButton.textContent = 'Copiar';
+      const copy = document.createElement('p');
+      copy.className = 'copy';
+      copy.textContent = text;
+      copyButton.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          copyButton.textContent = 'Copiado';
+          setTimeout(() => { copyButton.textContent = 'Copiar'; }, 1400);
+        } catch (_) {
+          copyButton.textContent = 'Selecciona el texto';
+        }
+      });
+      head.append(heading, copyButton);
+      article.append(head, copy);
+      results.append(article);
+    }
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const business = value('business') || 'tu negocio';
+      const offer = value('offer') || 'una oferta especial';
+      const audience = value('audience') || 'personas de tu zona';
+      const channel = value('channel');
+      const action = value('action') || 'pedir información';
+      results.replaceChildren();
+      addResult('Anuncio corto', `¿Eres ${audience}? En ${business} tenemos ${offer}. Escríbenos por ${channel} y te explicamos cómo ${action}.`);
+      addResult('Respuesta inicial', `¡Hola! Gracias por escribir a ${business}. La oferta actual es ${offer}. ¿Quieres que te comparta disponibilidad y te ayude a ${action}?`);
+      addResult('Seguimiento de 24 horas', `Hola, soy de ${business}. Ayer preguntaste por ${offer}. Si todavía te interesa, responde a este mensaje y te ayudo a ${action}.`);
+    });
+  </script>
+</body>
+</html>
