@@ -14,7 +14,7 @@ Landing pública para vender productos digitales de bajo ticket creados para neg
 - Revisión express personalizada por Ko-fi: https://ko-fi.com/gioleal/commissions
 - Pago directo en MXN por Stripe: https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E
 - Diagnóstico express de WhatsApp Ventas por Stripe: https://buy.stripe.com/bJe28r6nG7nc0nCft53AY0F
-- Checkout oficial Hotmart: https://pay.hotmart.com/P107066691Y
+- Checkout oficial Hotmart: https://go.hotmart.com/P107066691Y
 
 ## Productos
 
