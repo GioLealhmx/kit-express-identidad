@@ -5,6 +5,7 @@ Landing pública para vender productos digitales de bajo ticket creados para neg
 ## Compra rápida
 
 - Landing pública: https://giolealhmx.github.io/kit-express-identidad/
+- Diagnóstico gratis: https://giolealhmx.github.io/kit-express-identidad/diagnostico-gratis.html
 - Kit visual por Payhip: https://payhip.com/b/W3M07
 - Kit visual por Ko-fi: https://ko-fi.com/s/976b2544fc
 - Kit WhatsApp Ventas + IA por Ko-fi: https://ko-fi.com/s/82d9b64554
@@ -12,6 +13,10 @@ Landing pública para vender productos digitales de bajo ticket creados para neg
 - Pago directo en MXN por Stripe: https://buy.stripe.com/5kQ3cvh2k22S8U8ep13AY0E
 
 ## Productos
+
+### Diagnóstico gratis
+
+Herramienta pública de 2 minutos para que un negocio local revise si se ve confiable, responde bien por WhatsApp y lleva seguimiento básico. Termina con recomendaciones y enlaces a los productos de USD $5.
 
 ### Kit Express de Identidad Visual para Negocios Locales
 
